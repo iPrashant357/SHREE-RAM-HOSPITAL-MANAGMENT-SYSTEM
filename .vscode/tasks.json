@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "javac: build",
+      "type": "shell",
+      "command": "javac -cp lib/mysql-connector-java-8.0.33.jar -d bin src/hospital/*.java",
+      "group": "build",
+      "problemMatcher": "$javac"
+    }
+  ]
+}

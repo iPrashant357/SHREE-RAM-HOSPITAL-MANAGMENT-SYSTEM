@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run Welcome",
+      "request": "launch",
+      "mainClass": "hospital.welcome",
+      "classPaths": [
+        "bin",
+        "src",
+        "lib/mysql-connector-java-8.0.33.jar"
+      ]
+    },
+    {
+      "type": "java",
+      "name": "Run LoginPage",
+      "request": "launch",
+      "mainClass": "hospital.LoginPage",
+      "classPaths": [
+        "bin",
+        "src",
+        "lib/mysql-connector-java-8.0.33.jar"
+      ],
+      "env": {
+        "DB_USER": "root",
+        "DB_PASS": ""
+      }
+    },
+    {
+      "type": "java",
+      "name": "Setup DB",
+      "request": "launch",
+      "mainClass": "hospital.SetupDB",
+      "classPaths": [
+        "bin",
+        "lib/mysql-connector-java-8.0.33.jar"
+      ],
+      "env": {
+        "DB_USER": "root",
+        "DB_PASS": ""
+      }
+    }
+  ]
+}
